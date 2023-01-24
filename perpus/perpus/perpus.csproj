@@ -1,0 +1,397 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{70EC82C8-DF89-42F9-AB50-56DBD12E38E0}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>SayangDiniUas</RootNamespace>
+    <AssemblyName>SayangDiniUas</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>C:\Users\fujitsu\Pictures\Guna_UI_Framework_Ultimate_v2.0.0.1\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI">
+      <HintPath>C:\Users\fujitsu\Pictures\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 3.5\Guna.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Guna.UI2">
+      <HintPath>C:\Users\fujitsu\Pictures\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna_UI_Framework_Ultimate_v2.0.0.1\Guna.UI-Framework-Lib-master\Guna.UI2 WinForms\.net 3.5\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anggota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anggota.Designer.cs">
+      <DependentUpon>anggota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="buku.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="buku.Designer.cs">
+      <DependentUpon>buku.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CETAKANGGOTA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CETAKANGGOTA.Designer.cs">
+      <DependentUpon>CETAKANGGOTA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cetakbuktipinjam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cetakbuktipinjam.Designer.cs">
+      <DependentUpon>cetakbuktipinjam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dashboard.Designer.cs">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="laporan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporan.Designer.cs">
+      <DependentUpon>laporan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <DependentUpon>login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pengembalian.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pengembalian.Designer.cs">
+      <DependentUpon>pengembalian.cs</DependentUpon>
+    </Compile>
+    <Compile Include="petugas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="petugas.Designer.cs">
+      <DependentUpon>petugas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="pinjam.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pinjam.Designer.cs">
+      <DependentUpon>pinjam.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="register.Designer.cs">
+      <DependentUpon>register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anggota.resx">
+      <DependentUpon>anggota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="buku.resx">
+      <DependentUpon>buku.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CETAKANGGOTA.resx">
+      <DependentUpon>CETAKANGGOTA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cetakbuktipinjam.resx">
+      <DependentUpon>cetakbuktipinjam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dashboard.resx">
+      <DependentUpon>dashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan.resx">
+      <DependentUpon>laporan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pengembalian.resx">
+      <DependentUpon>pengembalian.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="petugas.resx">
+      <DependentUpon>petugas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pinjam.resx">
+      <DependentUpon>pinjam.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="register.resx">
+      <DependentUpon>register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sila.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fb %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ig.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\twiter.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homepage_pinjam-unduh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pelanggan.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Homepage_pinjam-unduh1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lg1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %285%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer %281%292.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\p1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-button-clipart-volume-icon-hapus-11563950527luvjbpuej2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tambah.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back %282%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\editper.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\per.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buku.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\buku1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %288%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %289%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %2810%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %2811%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\log1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zyro-image %2812%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\checked1.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
